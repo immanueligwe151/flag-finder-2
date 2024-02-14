@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+body {
+    font-family: 'Roboto', normal;
+    margin: 15px;
+    border: medium solid black;
+    border-radius: 15px;
+}
+
+header {
+    text-align: center;
+    background-color: darkseagreen;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+section {
+    margin-top: 0;
+}
+
+#header-div {
+    padding: 5px;
+}
+
+#outer-div {
+    background-color: aquamarine;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#inner-div {
+    border: medium solid black;
+    border-radius: 15px;
+    width: 90%;
+    min-height: 200px;
+    max-height: 900px;
+    padding: 5px;
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#options-div {
+    width: 70%;
+    min-width: 300px;
+    max-width: 470px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5%;
+}
+
+.options-span {
+    background-color: aqua;
+    padding: 5px;
+    border: thin solid black;
+    border-radius: 15px;
+    margin: 10px;
+    width: 150px;
+}
+
+.options-span:hover {
+    background-color: cornsilk;
+}
+
+button {
+    background-color: aliceblue;
+    padding: 5px 12px 5px 12px;
+}
+
+.big-button {
+    font-size: 40px;
+    font-weight: 600;
+    border-radius: 8px;
+    width: fit-content;
+}
+
+.small-button {
+    font-size: medium;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: aquamarine;
+}
+
+footer {
+    background-color: darkseagreen;
+    text-align: center;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
