@@ -1,39 +1,31 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Flag Finder (Resubmission)
 
-Welcome,
+This is a resubmission of the project Flag Finder, which I made as part of my Fullstack Developer course for Code Institute. This resubmission has been made to address issues with my previous submission, which resulted in me obtaining a Fail grade on the project.
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+## Project Description
 
-## Codeanywhere Reminders
+Flag Finder is a game, in which the user guesses the country which a flag belongs to. Flags are chosen at random from a list, with a group of four options as to which country the flag could belong to, and the user then has to choose which they believe is the correct one.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+![Screenshot of gameplay](assets/images/game-screenshot.png)
 
-`python3 -m http.server`
+## Issues
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+The main issue was that there was a lack of defensive design in my previous submission. This is shown as to where a user makes an invalid selection (i.e. doesn't pick an option), but is still able to move forward to the next question without any prompting that their selection is invalid. This has now been corrected, with a prompt appearing on the screen when the user clicks the "Next" button without having selected an answer.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+![Devensive programming alerting the user that they have not selected an option](assets/images/game-screenshot.png)
 
-`http_server`
+The changes were made to the [script.js](assets/js/script.js) file, specifically in the `checkAnswer()` function, where I've added a variable `valid`, which stores a boolean value that is made `true` if the user has selected an option, and the game only progresses if `valid` is `true`.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+The next issue that caused my original to obtain a Fail grade was due to poor commit frequency and poor commit messages. This has also been corrected in this resubmission, as I have made smaller commits, along with short and concise commit messages.
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Links
 
-To log into the Heroku toolbelt CLI:
+The original repository of the previous submission can be found [here](https://github.com/immanueligwe151/flag-finder).
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+The live link of the previous submission can be found [here](https://immanueligwe151.github.io/flag-finder/).
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+The README file of the previous submission, with more details as to the project development can be found [here](https://github.com/immanueligwe151/flag-finder/blob/main/README.md).
 
----
-
-Happy coding!
+The live link for this resubmission can be found [here](https://immanueligwe151.github.io/flag-finder-2/).
